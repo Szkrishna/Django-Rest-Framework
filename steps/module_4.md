@@ -166,11 +166,11 @@ python manage.py test
 3) Call API - We're ready to call the 'contact' endpoint. I like to user (Curl)[https://curl.se/] or (Httpie)[https://httpie.io/].
 
 ```
-curl -XPOST -H "Content-type: application/json" -d '{"name": "Bobby Stearman", "message": "test", "email":"bobby@didcoding.com"}' 'http://api:8000/contact/'
+curl -XPOST -H "Content-type: application/json" -d '{"name": "**your_name**", "message": "test", "email":"**your_email**"}' 'http://api:8000/contact/'
 ```
 
 ```
-http post http://api:8000/contact/ name='Bobby Stearman' message='This is a test' email=bobby@didcoding.com
+http post http://api:8000/contact/ name='**your_name**' message='This is a test' email=**your_email**
 ```
 
 

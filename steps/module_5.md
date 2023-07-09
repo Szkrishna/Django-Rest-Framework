@@ -5,10 +5,10 @@ This is my DRF course. I hope you like it.
 ***
 ***
 
-## Current **your_username** directory
-Your **your_username** directory should look like the following.
+## Current root directory
+Your root directory should look like the following.
 ```
-drf_course\  <--This is the **your_username** directory
+drf_course\  <--This is the root directory
     backend\
         core\
             __pycache__\
@@ -56,7 +56,7 @@ git pull origin module_5
 
 
 ## Steps/Commands
->Note: Please 'cd' into the **your_username** directory and fire up your virtual environment!
+>Note: Please 'cd' into the root directory and fire up your virtual environment!
 
 As I mentioned at the start of this course. This app will use token authentication to protect some of our endpoints. DRF makes this very easy.
 
@@ -180,11 +180,11 @@ Add a username, email and password.
 The following commands will call the API end point:
 
 ```
-curl -XPOST -F 'username=**your_username**' -F 'password=**your_password**' http://api:8000/api-token-auth/
+curl -XPOST -F 'username=root' -F 'password=Qwerty@123' http://api:8000/api-token-auth/
 ```
 
 ```
-http post http://api:8000/api-token-auth/ username=**your_username** password=**your_password**
+http post http://api:8000/api-token-auth/ username=root password=Qwerty@123
 ```
 
 With any luck, you should see something that looks like the following:
@@ -209,10 +209,10 @@ X-Frame-Options: DENY
 ***
 ***
 
-## **your_username** directory
->Note: If all went well, your **your_username** directory should now look like this
+## Root directory
+>Note: If all went well, your root directory should now look like this
 ```
-drf_course\  <--This is the **your_username** directory
+drf_course\  <--This is the root directory
     backend\
         core\
             __pycache__\

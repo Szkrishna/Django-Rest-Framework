@@ -275,10 +275,10 @@ Congratulations!! You have a fully functioning and tested API!!
 ***
 ***
 
-## **your_username** directory
->Note: If all went well, your **your_username** directory should now look like this
+## Root directory
+>Note: If all went well, your root directory should now look like this
 ```
-drf_course\  <--This is the **your_username** directory
+drf_course\  <--This is the root directory
     backend\
         core\
             __pycache__\
