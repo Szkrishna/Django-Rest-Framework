@@ -5,10 +5,10 @@ This is my DRF course. I hope you like it.
 ***
 ***
 
-## Current root directory
-Your root directory should look like the following.
+## Current **your_username** directory
+Your **your_username** directory should look like the following.
 ```
-drf_course\  <--This is the root directory
+drf_course\  <--This is the **your_username** directory
     backend\
         core\
             __pycache__\
@@ -69,7 +69,7 @@ git pull origin module_8
 
 ## Steps/Commands
 
->Note: Please 'cd' into the root directory and fire up your virtual environment!
+>Note: Please 'cd' into the **your_username** directory and fire up your virtual environment!
 
 In the last 2 module, we built an 'item' and 'order' end point for users to purchase items. It seems to work okay but let's double down on testing.
 In this module, we will write some unit tests to test our new endpoints.
@@ -234,51 +234,51 @@ http post http://api:8000/api-token-auth/ username=**your_username** password=**
 
 > This will retrieve all items
 
-curl -X GET -H 'Authorization: Token **your_token**' http://api:8000/item/
+curl -X GET -H 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200' http://api:8000/item/
 
-http http://api:8000/item/ 'Authorization: Token **your_token**'
+http http://api:8000/item/ 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200'
 
 
 > This will retreive a single item
 
-curl -X GET -H 'Authorization: Token **your_token**' http://api:8000/item/**your_item_uuid**/
+curl -X GET -H 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200' http://api:8000/item/8488d55d-e2a1-4546-927b-f96d53da966a/
 
-http http://api:8000/item/**your_item_uuid**/ 'Authorization: Token **your_token**' 
+http http://api:8000/item/8488d55d-e2a1-4546-927b-f96d53da966a/ 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200' 
 
 > This retrieve all orders
 
-curl -X GET -H 'Authorization: Token **your_token**' http://api:8000/order/
+curl -X GET -H 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200' http://api:8000/order/
 
-http http://api:8000/order/ 'Authorization: Token **your_token**'
+http http://api:8000/order/ 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200'
 
-> This will place an order for item id = **your_item_uuid** quantity = 1
+> This will place an order for item id = 8488d55d-e2a1-4546-927b-f96d53da966a quantity = 1
 
-curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Token **your_token**' -d '{"item": "**your_item_uuid**", "quantity": "1"}' http://api:8000/order/
+curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200' -d '{"item": "8488d55d-e2a1-4546-927b-f96d53da966a", "quantity": "1"}' http://api:8000/order/
 
-http http://api:8000/order/ 'Authorization: Token **your_token**' item="**your_item_uuid**" quantity="1"
+http http://api:8000/order/ 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200' item="8488d55d-e2a1-4546-927b-f96d53da966a" quantity="1"
 
 
-> This get order id = **your_order_uuid**
+> This get order id = e657cbb1-d7fd-4ca5-9bf9-0cb22d6140c5
 
-curl -X GET -H 'Authorization: Token **your_token**' http://api:8000/order/**your_order_uuid**/
+curl -X GET -H 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200' http://api:8000/order/e657cbb1-d7fd-4ca5-9bf9-0cb22d6140c5/
 
-http http://api:8000/order/**your_order_uuid**/ 'Authorization: Token **your_token**'
+http http://api:8000/order/e657cbb1-d7fd-4ca5-9bf9-0cb22d6140c5/ 'Authorization: Token 023505ff637468509745cb853fb02719dcee7200'
 
 > This will create a contact request
 
-curl -X POST -H "Content-type: application/json" -d '{"name": "Bobby Stearman", "message": "test", "email":"bobby@didcoding.com"}' 'http://api:8000/contact/'
+curl -X POST -H "Content-type: application/json" -d '{"name": "**your_name**", "message": "test", "email":"**your_email**"}' 'http://api:8000/contact/'
 
-http http://api:8000/contact/ name="Bobby Stearman" message="test" email="bobby@didcoding.com"
+http http://api:8000/contact/ name="**your_name**" message="test" email="**your_email**"
 
 Congratulations!! You have a fully functioning and tested API!!
 
 ***
 ***
 
-## Root directory
->Note: If all went well, your root directory should now look like this
+## **your_username** directory
+>Note: If all went well, your **your_username** directory should now look like this
 ```
-drf_course\  <--This is the root directory
+drf_course\  <--This is the **your_username** directory
     backend\
         core\
             __pycache__\

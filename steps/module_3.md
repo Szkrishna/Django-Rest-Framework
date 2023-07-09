@@ -230,9 +230,9 @@ python manage.py migrate
 
 > This will create a contact request
 
-curl -X POST -H "Content-type: application/json" -d '{"name": "Bobby Stearman", "message": "test", "email":"bobby@didcoding.com"}' 'http://api:8000/contact/'
+curl -X POST -H "Content-type: application/json" -d '{"name": "**your_name**", "message": "test", "email":"**your_email**"}' 'http://api:8000/contact/'
 
-http http://api:8000/contact/ name="Bobby Stearman" message="test" email="bobby@didcoding.com"
+http http://api:8000/contact/ name="**your_name**" message="test" email="**your_email**"
 
 if it went well, you should see something like the following in your terminal.
 
@@ -252,9 +252,9 @@ X-Frame-Options: DENY
 {
     "data": {
         "attributes": {
-            "email": "bobby@didcoding.com",
+            "email": "**your_email**",
             "message": "test",
-            "name": "Bobby Stearman"
+            "name": "**your_name**"
         },
         "id": "b37b5fa7-7cdd-4594-961b-8489ad66fd83",
         "type": "Contact"

@@ -5,10 +5,10 @@ This is my DRF course. I hope you like it.
 ***
 ***
 
-## Current root directory
-Your root directory should look like the following.
+## Current **your_username** directory
+Your **your_username** directory should look like the following.
 ```
-drf_course\  <--This is the root directory
+drf_course\  <--This is the **your_username** directory
     backend\
         core\
             __pycache__\
@@ -56,7 +56,7 @@ git pull origin module_5
 
 
 ## Steps/Commands
->Note: Please 'cd' into the root directory and fire up your virtual environment!
+>Note: Please 'cd' into the **your_username** directory and fire up your virtual environment!
 
 As I mentioned at the start of this course. This app will use token authentication to protect some of our endpoints. DRF makes this very easy.
 
@@ -209,10 +209,10 @@ X-Frame-Options: DENY
 ***
 ***
 
-## Root directory
->Note: If all went well, your root directory should now look like this
+## **your_username** directory
+>Note: If all went well, your **your_username** directory should now look like this
 ```
-drf_course\  <--This is the root directory
+drf_course\  <--This is the **your_username** directory
     backend\
         core\
             __pycache__\
